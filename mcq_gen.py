@@ -269,7 +269,7 @@ def mcqGen(topic, quantity, difficulty, file, inputText, status):
     agent.reset()
     subTopics = select_topic(topic, quantity)
 
-    while len(subTopics) < int(quantity): 
+    while len(subTopics) != int(quantity): 
         subTopics = select_topic(topic, quantity )
 
     mcqs = []
