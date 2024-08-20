@@ -284,7 +284,7 @@ def mcqGen(topic, quantity, difficulty, file, inputText, status):
             if difficulty == "normal":
                 prompt = prompt + ". Các câu hỏi có độ khó ở mức trung bình, các đáp án có thể gây nhầm lẫn và yêu cầu người trả lời phải áp dụng một vài bước suy luận"
             if difficulty == "hard":
-                prompt = prompt + "Các câu hỏi có độ khó ở mức cao, các đáp án dễ gây ra sự nhầm lẫn, người trả lời phải vận dụng khả năng suy luận và chọn lọc thông tin kỹ càng để chọn ra đáp án đúng"
+                prompt = prompt + ". Các câu hỏi có độ khó ở mức cao, các đáp án dễ gây ra sự nhầm lẫn, người trả lời phải vận dụng khả năng suy luận và chọn lọc thông tin kỹ càng để chọn ra đáp án đúng"
             prompt = prompt + ". Sau đó sử dụng công cụ kiểm tra lại."
             print("In ra prompt: ")
             print(prompt)
