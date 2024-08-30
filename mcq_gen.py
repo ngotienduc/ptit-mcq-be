@@ -280,11 +280,11 @@ def mcqGen(topic, quantity, difficulty, file, inputText, status):
             if topic != '':
                 prompt = prompt + " trong chủ đề \"" + topic + "\""
             if difficulty == "easy":
-                prompt = prompt + ". Các câu hỏi có độ khó ở mức thấp, người trả lời có thể dễ dàng tìm ra đáp án đúng"
+                prompt = prompt + ". Các câu hỏi có độ khó tương đương với cấp độ \"remember\" và \"understand\" trong thang đo Bloom"
             if difficulty == "normal":
-                prompt = prompt + ". Các câu hỏi có độ khó ở mức trung bình, các đáp án có thể gây nhầm lẫn và yêu cầu người trả lời phải áp dụng một vài bước suy luận"
+                prompt = prompt + ". Các câu hỏi có độ khó tương đương với cấp độ \"apply\" và \"analyse\" trong thang đo Bloom"
             if difficulty == "hard":
-                prompt = prompt + ". Các câu hỏi có độ khó ở mức cao, các đáp án dễ gây ra sự nhầm lẫn, người trả lời phải vận dụng khả năng suy luận và chọn lọc thông tin kỹ càng để chọn ra đáp án đúng"
+                prompt = prompt + ". Các câu hỏi có độ khó tương đương với cấp độ \"evaluate\" và \"create\" trong thang đo Bloom"
             prompt = prompt + ". Sau đó sử dụng công cụ kiểm tra lại."
             print("In ra prompt: ")
             print(prompt)
